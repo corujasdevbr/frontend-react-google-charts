@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import BarChartChartUserRegisterbyMonth from "./components/BarChartChartUserRegisterbyMonth";
+import ColumnChartCountPercentageCatgories from "./components/ColumnChartCountPercentageCatgories";
+import LineChartChartUserRegisterbyMonth from "./components/LineChartChartUserRegisterbyMonth";
+import PieChartCountPercentageCatgories from "./components/PieChartCountPercentageCatgories";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <BarChartChartUserRegisterbyMonth />
+          </div>
+          <div class="col">
+            <LineChartChartUserRegisterbyMonth />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <PieChartCountPercentageCatgories />
+          </div>
+          <div class="col">
+            <ColumnChartCountPercentageCatgories />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
